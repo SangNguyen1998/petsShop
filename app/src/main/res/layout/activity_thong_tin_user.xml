@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/aaa"/>
+
+        <EditText
+            android:id="@+id/edFullname_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="10dp"
+            android:text="Nguyen Van A"
+            android:paddingLeft="8dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edPhoneNumber_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="10dp"
+            android:text="0123456789"
+            android:paddingLeft="8dp"
+            android:textSize="20dp" />
+
+
+        <Spinner
+            android:id="@+id/spnAddress_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edNewAddress_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:hint="123 Âu cơ, quận Tân Bình, TP HCM"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edMail_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="10dp"
+            android:text="nguyenvana123@gmail.com"
+            android:paddingLeft="8dp"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btnConfirm_UserInfor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+</LinearLayout>
